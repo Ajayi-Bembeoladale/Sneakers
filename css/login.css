@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#loginbox {
+    border: 2px solid black;
+    width: 30%;
+    height: 35vh;
+    /* padding: 30px 20px; */
+    margin-top: 100px;
+    background-color: goldenrod;
+    transform: translateY(400px);
+    opacity: 0;
+    animation: 2s flowup linear forwards;
+}
+
+@keyframes flowup {
+    to {
+        transform: translateY(0);
+        opacity: 0.9;
+    }
+}
