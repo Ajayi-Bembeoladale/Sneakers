@@ -7,6 +7,12 @@
     box-sizing: border-box;
 }
 
+:root {
+    --linear-grad: linear-gradient(to right, #0e0e0f, #f5f0f091);
+    --grad-clr1: #0e0e0f;
+    --grad-clr2: #0e0e0f;
+}
+
 #top {
     text-align: center;
     font-family: "Grenze Gotisch", serif;
@@ -25,6 +31,7 @@ a:hover {
 
 #header {
     font-size: 20px;
+    background: var(--linear-grad);
   
 }
 
