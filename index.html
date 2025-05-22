@@ -1,25 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <script src="js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="css/style.css">
-    <script src="js/jquery-3.7.1.min.js"></script>
-    <script src="js/script.js"></script>
-    <title>Sneakers</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sneakers Store</title>
+  <link rel="stylesheet" href="css/bootstrap.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="https://kit.fontawesome.com/bae8f0aec8.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <h1 id="top">WELCOME TO SNEAKERS STORE <img src="image/logo.png" class="col-md-1" alt=""></h1>
 
-    <div id="header" class="bg-dark p-2">
-      <a href="" class="mx-5"> Home</a> 
-      <a href="" class="mx-5"> Shop</a> 
-      <a href="" class="mx-5"> Need Support??</a> 
-      <a href="" class="mx-5">Privacy Policy</a>
-        
+  <div id="storeContent">
+  <h1 id="top">
+    WELCOME TO SNEAKERS STORE
+    <img src="image/logo.png" class="col-md-1" alt="" />
+  </h1>
+
+  <div id="header" class="bg-dark p-2">
+    <a href="#" class="mx-5">Home</a>
+    <a href="#" class="mx-5">Shop</a>
+    <a href="#" class="mx-5">Need Support?</a>
+    <a href="#" class="mx-5">Privacy Policy</a>
+
+    <span id="userGreeting">
+      Hello
+    </span>
+  </div>
+  </div>
+
+  <!-- LOGIN / SIGNUP CONTAINER -->
+   <section id="allLogin">
+  <div class="container" id="container">
+    <div class="form-container sign-up-container">
+      <form action="#" id="signupForm">
+        <h1>Create Account</h1>
+        <div class="social-container">
+          <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+          <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+        <span>or use your email for registration</span>
+        <div class="infield">
+          <input type="text" placeholder="Name" id="signupName" />
+          <label></label>
+        </div>
+        <div class="infield">
+          <input type="email" placeholder="Email" id="signupEmail" />
+          <label></label>
+        </div>
+        <div class="infield">
+          <input type="password" placeholder="Password" id="signupPassword" />
+          <label></label>
+        </div>
+        <button type="submit">Sign Up</button>
+      </form>
     </div>
-    
+
+    <div class="form-container sign-in-container">
+      <form action="#" id="loginForm">
+        <h1>Sign in</h1>
+        <div class="social-container">
+          <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+          <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+        <span>or use your account</span>
+        <div class="infield">
+          <input type="email" placeholder="Email" id="loginEmail" />
+          <label></label>
+        </div>
+        <div class="infield">
+          <input type="password" placeholder="Password" id="loginPassword" />
+          <label></label>
+        </div>
+        <a href="#" class="forgot">Forgot your password?</a>
+        <button type="submit">Sign In</button>
+      </form>
+    </div>
+
+    <div class="overlay-container" id="overlayCon">
+      <div class="overlay">
+        <div class="overlay-panel overlay-left">
+          <img src="image/logo.png" class="col-md-1" id="logo" alt="" />
+          <h1>Welcome Back!</h1>
+          <p>To keep connected with us please login with your personal info</p>
+          <button id="btnAdjustt">Sign In</button>
+        </div>
+        <div class="overlay-panel overlay-right">
+          <img src="image/logo.png" class="col-md-1" id="logo" alt="" />
+          <h1>Hello, Friend!</h1>
+          <p>Enter your personal details and start journey with us</p>
+          <button id="btnAdjust">Sign Up</button>
+        </div>
+      </div>
+      <button id="overlayBtn"></button>
+    </div>
+  </div>
+  </section>
+
+  <script src="js/script.js"></script>
+  <script src="js/jquery-3.7.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
 </body>
 </html>
